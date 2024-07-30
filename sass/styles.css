@@ -1,0 +1,280 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: arial, tahoma, verdana, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid_qsomos {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.grid_servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.grid-contact {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navigation__link:hover {
+  border-bottom: 2px solid #ff0000;
+}
+
+.navigation__contact {
+  border: 2px solid #ff0000;
+  padding: 1rem 2rem;
+}
+
+.navigation__contact:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.banner {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner > h1 {
+  position: absolute;
+  top: 50%;
+  left: 600px;
+  color: #FFD700;
+  font-size: xx-large;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner > img {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sub-banner {
+  height: 600px;
+  margin-top: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.sub-banner > h3 {
+  position: absolute;
+  top: 300px;
+  left: 400px;
+  color: #fff;
+  font-size: xx-large;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.sub-banner > img {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.qsomos-title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.qsomos-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: red;
+  margin: 1rem auto 0;
+}
+
+.qsomos-text {
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+.servicios__title {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.servicios__title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: red;
+  margin: 1rem auto 0;
+}
+
+.grid_servicios > div {
+  border: 1px solid gray;
+}
+
+.servicios__text {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.catering > h2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.catering > h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: red;
+  margin: 1rem auto 0;
+}
+
+.catering > p {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.pricing-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pricing-card h2 {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+.pricing-card .price {
+  font-size: 24px;
+  margin: auto;
+  padding: 20px 0;
+  background-color: #f4f4f4;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-card ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.pricing-card ul li:last-child {
+  border-bottom: none;
+}
+
+.pricing-card ul li span {
+  color: green;
+  margin-right: 10px;
+}
+
+.contacto__title {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.contacto__title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: red;
+  margin: 1rem auto 0;
+}
+
+.contacto__text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.form-container {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.form-group button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 3rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #45a049;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */

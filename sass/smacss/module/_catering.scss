@@ -1,0 +1,60 @@
+.catering>h2{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.catering>h2::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: red;
+    margin: 1rem auto 0;
+}
+
+.catering>p{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.pricing-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.pricing-card h2 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 24px;
+}
+.pricing-card .price {
+    font-size: 24px;
+    margin: auto;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.pricing-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.pricing-card ul li:last-child {
+    border-bottom: none;
+}
+.pricing-card ul li span {
+    color: green;
+    margin-right: 10px;
+}

@@ -1,0 +1,21 @@
+.servicios__title{
+    text-align: center;
+    margin-top: 3rem;
+}
+.servicios__title::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: red;
+    margin: 1rem auto 0;
+}
+
+.grid_servicios>div{
+    border: 1px solid gray;
+}
+
+.servicios__text{
+    text-align: center;
+    margin: 1rem auto;
+}

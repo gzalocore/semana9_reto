@@ -1,0 +1,18 @@
+.qsomos-title{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.qsomos-title::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: red;
+    margin: 1rem auto 0;
+}
+
+.qsomos-text{
+    margin-bottom: 1rem;
+    font-size: 18px;
+}

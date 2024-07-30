@@ -1,0 +1,26 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.grid_qsomos{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.grid_servicios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+
+
+.grid-contact{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 2rem;
+}
